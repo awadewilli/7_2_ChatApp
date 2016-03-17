@@ -11,28 +11,38 @@ $.fn.serializeObject = function() {
     return acum;
   }, {});
 };
-
+console.log(localStorage.username);
 var SubmitForm = React.createClass({
 mixins: [Backbone.React.Component.mixin],
 
+getInitialState:function(){
+  return {'content':'default', 'username':localStorage.username};
 
-handleSubmit:function(){
-e.preventDefault();
-var inputVal = $('#messageInput').val();
-this.props
 },
+
+handleSubmit:function(e){
+e.preventDefault();
+var inputVal = {
+ content: $('#messageInput').val(),
+ username:localStorage.username
+};
+console.log(inputVal);
+this.getCollection().create(inputVal);
+console.log();
+},
+
 handleChange: function(e){
 
 
 },
 
 render:function(){
+
   return(<div>
-    <form onSubmit={this.props.handleSubmit}>
+    <form onSubmit={this.handleSubmit}>
       <div className="input-wrapper">
           <input
             id="messageInput"
-            onChange={this.props.handleChange}
             type="text"
             name="content"
             placeholder="Send a Message"/>

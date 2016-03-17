@@ -9,6 +9,7 @@ console.log(SubmitForm.state);
 
 var ChatContent = React.createClass({
 mixins: [Backbone.React.Component.mixin],
+
 componentDidMount: function(){
     setInterval(this.handleFetch, 3000);
   },
@@ -20,27 +21,31 @@ handleFetch:function(){
 
   render:function(){
     var messages = this.props.collection.map(function(model){
+      if(model.get('username')==localStorage.username){
       return (
-        <div className="recipient" key={model.get('_id')}>
+        <div className="user" key={model.get('_id')}>
           <span>{model.get('content')}</span>
           <span>{model.get('time')}</span>
           <span> {model.get('username')}</span>
         </div>
-      )
+      )}
+      else{
+        return (
+          <div className="recipient" key={model.get('_id')}>
+            <span>{model.get('content')}</span>
+            <span>{model.get('time')}</span>
+            <span> {model.get('username')}</span>
+          </div>
+        )
+      }
     });
-
 
     return(
       <div className="row chat-wrapper" id="chat-wrapper">
-      <div className="col-md-6 col-sm-6 col-xs-6">
-          {messages}
-      </div>
-      <div className="col-md-6 col-sm-6 col-xs-6">
-        <div className="user">
-          <span></span>
+        <div className="col-md-8 col-sm-8 col-xs-8">
+            {messages}
         </div>
       </div>
-  </div>
     )
   }
 });
