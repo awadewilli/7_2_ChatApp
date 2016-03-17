@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="437px" height="83px" viewBox="0 0 437 83" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" filter="url(#filter-1)">
+        <g id="Artboard-1" transform="translate(-382.000000, -598.000000)" stroke="#979797" fill="#FFFFFF">
+            <path d="M422.971309,647.81971 C422.493848,648.949724 422.22788,650.313931 422.22788,651.951061 C422.22788,667.936664 404.815789,672.29213 404.815789,672.29213 C404.815789,672.29213 413.925264,677.214919 427.603448,672.898951 C438.913698,669.330152 445.182427,653.272482 447.013917,647.81971 L807.001488,647.81971 C811.420125,647.81971 815,644.236222 815,639.815765 L815,608.003944 C815,603.574694 811.418944,600 807.001488,600 L393.998512,600 C389.579875,600 386,603.583488 386,608.003944 L386,639.815765 C386,644.245016 389.581056,647.81971 393.998512,647.81971 L422.971309,647.81971 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>

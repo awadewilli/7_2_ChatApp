@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="411px" height="217px" viewBox="0 0 411 217" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feMorphology radius="2" in="SourceAlpha" operator="dilate" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="1" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.298797035   0 0 0 0 0.351100278   0 0 0 0 0.515518707  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="2" in="SourceAlpha" operator="dilate" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="1" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.298797035   0 0 0 0 0.351100278   0 0 0 0 0.515518707  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="2" in="SourceAlpha" operator="dilate" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="1" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.298797035   0 0 0 0 0.351100278   0 0 0 0 0.515518707  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-2" transform="translate(-395.000000, -300.000000)">
+            <g id="Group" transform="translate(403.000000, 307.000000)">
+                <rect id="Rectangle-1" fill="#FFFFFF" filter="url(#filter-1)" x="5.68434189e-14" y="0" width="395" height="201" rx="32"></rect>
+                <path d="M7.18314297e-14,27 C2.40084334,11.7016096 15.634862,0 31.6116729,0 L362.610969,0 C378.581945,0 391.820252,11.7040536 394.222357,27 L7.22755189e-14,27 Z" id="Combined-Shape" fill="#384F4E" filter="url(#filter-2)"></path>
+                <path d="M1.49880108e-14,203 C2.40084334,187.70161 15.634862,176 31.6116729,176 L362.610969,176 C378.581945,176 391.820252,187.704054 394.222357,203 L1.54321e-14,203 Z" id="Combined-Shape-Copy" fill="#384F4E" filter="url(#filter-3)" transform="translate(197.111179, 189.500000) rotate(-180.000000) translate(-197.111179, -189.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>
