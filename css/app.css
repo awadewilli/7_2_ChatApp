@@ -5808,7 +5808,8 @@ h5 {
 footer {
   height: 67px;
   background-color: #384F4E;
-  position: absolute;
+  position: fixed;
+  bottom: 0;
   width: 100%; }
 
 .chat-wrapper {
@@ -5846,7 +5847,7 @@ form {
   width: 435px;
   height: 77px;
   position: relative;
-  margin: 0px auto 0px auto;
+  margin: 0px auto 100px auto;
   padding: 13px 0px 13px 16px; }
   .input-wrapper input {
     width: 97%;
@@ -5861,10 +5862,10 @@ form {
   background-color: #384F4E;
   height: 41px;
   width: 41px;
-  position: relative;
-  left: 230px;
-  bottom: 15px;
-  margin-bottom: 15px;
+  position: absolute;
+  left: 250px;
+  top: 58px;
+  margin-bottom: 20px;
   padding-right: 10px;
   padding-top: 6px; }
 
@@ -5872,15 +5873,27 @@ form {
   color: white;
   font-size: 1.3em; }
 
-@media (max-width: 986px) {
+@media (min-width: 1200px) {
   .circle {
     border-radius: 50px;
     background-color: #384F4E;
     height: 41px;
     width: 41px;
-    position: relative;
-    left: 130px;
-    bottom: 15px;
+    position: absolute;
+    left: 350px;
+    top: 58px;
+    margin-bottom: 15px;
+    padding-right: 10px;
+    padding-top: 6px; } }
+@media (max-width: 993px) {
+  .circle {
+    border-radius: 50px;
+    background-color: #384F4E;
+    height: 41px;
+    width: 41px;
+    position: absolute;
+    left: 140px;
+    top: 58px;
     margin-bottom: 15px;
     padding-right: 10px;
     padding-top: 6px; } }
@@ -5889,10 +5902,10 @@ form {
   height: 210px;
   width: 405px;
   padding: 20px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 200px; }
+  margin-top: 50px; }
   .username-submit h3 {
     text-align: center; }
   .username-submit button {
@@ -5901,5 +5914,19 @@ form {
   .username-submit input {
     display: block;
     margin: 0 auto; }
+
+.username {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px; }
+
+.time {
+  margin-top: -5px;
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.75); }
+
+.chat {
+  color: white;
+  font-size: 12pt; }
 
 /*# sourceMappingURL=app.css.map */
